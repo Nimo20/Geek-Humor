@@ -1,1 +1,16 @@
-/* styling for project */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #bcdceb;
+
+}
+header{
+    background-color: #345a50;
+    padding: 20px;
+    text-align: center;
+    
+}
+
