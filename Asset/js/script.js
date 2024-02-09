@@ -56,4 +56,12 @@ document.addEventListener('DOMContentLoaded', function () {
             })
     }
 
+    // fx to display results 
+    function displayResult(result) {
+        // Clears previous joke/emoji in the result container
+        resultContainer.innerHTML = '';
+        // Displays the results in the result container
+        resultContainer.innerHTML = result;
+    }
+
 });
