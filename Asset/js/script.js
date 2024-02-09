@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     });
 
-
     // fx to get a random geek joke
     function getUserJoke() {
         // geek joke API  
@@ -31,12 +30,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 // if result is valid, joke is displayed
                 if (response.ok) {
                     return response.text();
-                // if result is not valid, error message is displayed 
+                    // if result is not valid, error message is displayed 
                 } else {
                     console.error('Error fetching a geek joke:', response.statusText);
                     return 'Sorry, could not fetch a geek joke at the moment.';
                 }
+            })
+            // in case of errors with fetch request
+            .catch(function (error) {
+                console.error('Unable to connect to the geek joke API', error);
+                return 'Sorry, could not fetch a geek joke at the moment.';
             });
+
     }
 
     // fx to get a random emoji
@@ -48,20 +53,24 @@ document.addEventListener('DOMContentLoaded', function () {
                 // if result is valid, random emoji is displayed
                 if (response.ok) {
                     return response.json();
-                // if result is not valid, error message is displayed 
+                    // if result is not valid, error message is displayed 
                 } else {
                     console.error('Error fetching random emoji:', response.statusText);
                     return { htmlCode: ['?'] };
                 }
             })
+            // in case of errors with fetch request
+            .catch(function (error) {
+                console.error('Unable to connect to the emoji API', error);
+                return { htmlCode: [':question:'] };
+            });
     }
 
     // fx to display results 
     function displayResult(result) {
-        // Clears previous joke/emoji in the result container
+        // Clears previous joke/emoji in the result container by setting it to an empty string
         resultContainer.innerHTML = '';
         // Displays the results in the result container
         resultContainer.innerHTML = result;
     }
-
 });
