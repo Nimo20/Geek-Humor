@@ -40,5 +40,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // fx to get a random emoji
+    function getUserEmoji() {
+        // emojihub API 
+        var apiUrl = 'https://emojihub.yurace.pro/api/random';
+        return fetch(apiUrl)
+            .then(function (response) {
+                // if result is valid, random emoji is displayed
+                if (response.ok) {
+                    return response.json();
+                // if result is not valid, error message is displayed 
+                } else {
+                    console.error('Error fetching random emoji:', response.statusText);
+                    return { htmlCode: ['?'] };
+                }
+            })
+    }
 
 });
