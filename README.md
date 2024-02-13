@@ -24,7 +24,7 @@ USER STORY:
 - SO THAT I can brighten my day with a spontaneous laugh with one click of a button
 
 LINKS:
-Screenshot: ![image](Asset/image-4.png)
+Screenshot: ![image](image.png)
 
 - Link to github repository for this project: https://github.com/Nimo20/Geek-Humor 
 
