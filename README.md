@@ -1,12 +1,12 @@
 # Geek-Humor
 PROJECT DESCRIPTION:
 
-This project requires us to work as a team to create an application that includes all the concepts we have learned over the course of the bootcamp so far. This front-end application will showcase our knowledge on the following requirements below:
+This project requires us to create a front-end application that will showcase our knowledge on the following requirements below:
 
 REQUIREMENTS:
 - Use a CSS framework other than Bootstrap
 - Be deployed to Github Pages
-- Be interactive (accept & repsond to user input)
+- Be interactive (accept & respond to user input)
 - Use at least 2 server-side APIs
 - Include at least one modal, and does not use native browser alert, confirm, or prompt functionality
 - Use client-side storage
@@ -20,12 +20,12 @@ Important step:
 
 USER STORY:
 - AS A joke enthusiast
-- I WANT TO entertain myself with a blend of geek humor and random witty emojis
+- I WANT TO entertain myself with a blend of geek humor and random emojis
 - SO THAT I can brighten my day with a spontaneous laugh with one click of a button
 
 LINKS:
 Screenshot: ![Alt text]
 
-- Link to github repository for this project:
+- Link to github repository for this project: https://github.com/Nimo20/Geek-Humor 
 
 - Link to deployed application:
