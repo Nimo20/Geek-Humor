@@ -63,12 +63,15 @@ footer {
     display: flex;
     flex-wrap: wrap;
     background-color: black;
+    background-color: rgb(242, 135, 28);
+    height: 45px;
 }
 
 h4
  {
     padding: 5px 4%;
     margin: auto 20px;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Jura", sans-serif;
+    
 
 }
