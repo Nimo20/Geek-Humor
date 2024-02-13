@@ -28,4 +28,4 @@ Screenshot: ![image](image.png)
 
 - Link to github repository for this project: https://github.com/Nimo20/Geek-Humor 
 
-- Link to deployed application:
+- Link to deployed application: https://nimo20.github.io/Geek-Humor/
